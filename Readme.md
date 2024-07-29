@@ -40,4 +40,21 @@ CREATE TABLE emails (
     sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+7. Jalankan server nya dan berikut adalah informasi end point nya : 
 
+- Endpoint untuk register : http://localhost/tugas-email-nana-suryana/register
+  Parameter yang dibutuhkan pada form-data : email, password, first_name, last_name
+  Method : POST
+- Endpoint untuk Login : http://localhost/tugas-email-nana-suryana/login
+  Parameter yang dibutuhkan pada form-data : email, password
+  Method : POST
+- Endpoint untuk Logout : http://localhost/tugas-email-nana-suryana/logout
+  Parameter yang dibutuhkan pada form-data : email, password
+  Method : POST
+- Endpoint untuk Send Email : http://localhost/tugas-email-nana-suryana/send_email
+  Parameter yang dibutuhkan pada form-data : to, subject, body
+  Parameter yang dibutuhkan pada Header : Authorization dengan value secret key yang didapat ketika login
+  Method : POST
+- Endpoint untuk get email list : http://localhost/tugas-email-nana-suryana/data_email
+  Parameter yang dibutuhkan pada Header : Authorization dengan value secret key yang didapat ketika login
+  Method : GET
